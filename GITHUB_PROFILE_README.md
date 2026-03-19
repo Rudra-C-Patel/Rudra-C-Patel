@@ -37,11 +37,6 @@ networking  = ["TCP/IP", "DNS", "VPN mesh", "CDN", "SSH", "REST APIs"]
 | Distributed Data Pipeline & Web Scraping Agent | Autonomous multi-source data collection, normalization, ranking, and processing pipeline — running 24/7 on self-hosted Ubuntu infrastructure. | Python, Playwright, Kimi AI |
 | Telegram Commander | 24/7 system control via Telegram bot — deploys code, runs audits | Python, systemd, Flask |
 
----
-
-## 📊 Stats
-
-![Rudra's GitHub Stats](https://github-readme-stats.vercel.app/api?username=Rudra-C-Patel&show_icons=true&theme=default&hide_border=true)
 
 ---
 
