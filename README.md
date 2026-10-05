@@ -1,8 +1,8 @@
 # Rudra Patel
 
-Solo founder. I build and run production software while finishing my degree.
+Solo founder. I build and run production software while studying at UC San Diego.
 
-19, Eastvale CA. Starting at UC San Diego in Fall 2026, Cognitive Science with an ML / Neural Computation focus.
+San Diego, CA. Cognitive Science with a Machine Learning & Neural Computation specialization at UC San Diego.
 
 ---
 
@@ -18,7 +18,7 @@ Dealerships sit on DMS and CRM exports full of revenue nobody actioned: leads th
 |---|---|
 | Backend | Python 3.11, FastAPI, file-based JSON storage, Railway |
 | Frontend | React 19, Vite 8, React Router v7, Vercel |
-| AI | NVIDIA NIM API (`z-ai/glm-5.2`) for call script generation |
+| AI | NVIDIA NIM API for call script generation, with deterministic fallbacks when no model is available |
 | Auth | Bearer tokens, bcrypt hashing with transparent legacy rehash |
 | Notifications | Telegram Bot API, SMTP |
 
@@ -32,22 +32,29 @@ Public showcase repo: **[dealerscope-ai](https://github.com/Rudra-C-Patel/dealer
 
 ---
 
+## Quantitative Strategy Research Platform
+
+**[trading-bot](https://github.com/Rudra-C-Patel/trading-bot)**: an event-driven backtester and 7-fold walk-forward validation harness over ~5,300 US stocks. Its main result is a negative one: a 10.5% in-sample CAGR fell to -0.8% out of sample, and 8 strategy configurations were rejected before any capital was deployed. Paper trading only.
+
+---
+
 ## Tools I reach for
 
 ```
-languages    Python, JavaScript, SQL, C++, Bash
-backend      FastAPI, uvicorn, pandas, pytest
-frontend     React, Vite, Tailwind
-infra        Linux, Railway, Vercel, systemd, Tailscale, GitHub Actions
-ai           NVIDIA NIM, Playwright, scikit-style modeling by hand
+languages   Python, JavaScript, SQL, C++, Bash
+backend     FastAPI, uvicorn, pandas, pytest
+frontend    React, Vite, Tailwind
+infra       Linux, Railway, Vercel, systemd, Tailscale, GitHub Actions
+ai          NVIDIA NIM, Playwright, scikit-style modeling by hand
 ```
 
 ---
 
 ## Background
 
-- Santiago Canyon College, transferring to UC San Diego for Fall 2026
-- IT Support Intern, Project RAISE, Cal State Fullerton
+- UC San Diego, B.S. Cognitive Science (ML & Neural Computation), expected 2028
+- Santiago Canyon College, A.S. Math & Sciences with Honors
+- HSI STEM Intern, Student Help Desk (Project RAISE), Santiago Canyon College
 - Google Cybersecurity and Google Data Analytics certificates
 - English, Gujarati, Hindi, Spanish
 - Permanent Resident, no sponsorship required
