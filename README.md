@@ -54,7 +54,7 @@ ai          NVIDIA NIM, Playwright, scikit-style modeling by hand
 
 - UC San Diego, B.S. Cognitive Science (ML & Neural Computation), expected 2028
 - Santiago Canyon College, A.S. Math & Sciences with Honors
-- HSI STEM Intern, Student Help Desk (Project RAISE), Santiago Canyon College
+- IT Intern, HSI STEM (Project RAISE), Nov 2025 – Aug 202
 - Google Cybersecurity and Google Data Analytics certificates
 - English, Gujarati, Hindi, Spanish
 - Permanent Resident, no sponsorship required
