@@ -1,6 +1,8 @@
 # Rudra Patel
 
-UC San Diego Cognitive Science (Machine Learning & Neural Computation) student and founder of DealerScope AI. San Diego, CA.
+Solo founder. I build and run production software while studying at UC San Diego.
+
+San Diego, CA. Cognitive Science with a Machine Learning & Neural Computation specialization at UC San Diego.
 
 ---
 
@@ -36,12 +38,6 @@ Public showcase repo: **[dealerscope-ai](https://github.com/Rudra-C-Patel/dealer
 
 ---
 
-## Distributed Data Pipeline (retired)
-
-**[internship-automation-agent](https://github.com/Rudra-C-Patel/internship-automation-agent)**: a pipeline that collected from 7 public job-board sources in parallel, normalized their schemas, ranked records with an LLM, and drove Playwright through the queue overnight (capped at 8 records per night), running as systemd services on a self-hosted Ubuntu box. The host was decommissioned in June 2026 and the source went with it; the repo is the architecture record.
-
----
-
 ## Tools I reach for
 
 ```
@@ -58,7 +54,7 @@ ai          NVIDIA NIM, Playwright, scikit-style modeling by hand
 
 - UC San Diego, B.S. Cognitive Science (ML & Neural Computation), expected 2028
 - Santiago Canyon College, A.S. Math & Sciences with Honors
-- IT Intern, HSI STEM (Project RAISE), Nov 2025 – Aug 2026
+- IT Intern, HSI STEM (Project RAISE), Nov 2025 – Aug 202
 - Google Cybersecurity and Google Data Analytics certificates
 - English, Gujarati, Hindi, Spanish
 - Permanent Resident, no sponsorship required
