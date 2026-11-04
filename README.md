@@ -1,52 +1,36 @@
 # Rudra Patel
 
-Solo founder. I build and run production software while studying at UC San Diego.
-
-San Diego, CA. Cognitive Science with a Machine Learning & Neural Computation specialization at UC San Diego.
+Cognitive Science (Machine Learning & Neural Computation) student at UC San Diego and founder of [DealerScope AI](https://dealerscope.app).
 
 ---
 
-## DealerScope AI
+## Projects
 
-Revenue intelligence for car dealerships. Live at **[dealerscope.app](https://dealerscope.app)**.
+### [DealerScope AI](https://github.com/Rudra-C-Patel/dealerscope-ai) · live at [dealerscope.app](https://dealerscope.app)
 
-Dealerships sit on DMS and CRM exports full of revenue nobody actioned: leads that never got a second call, declined service work that was never followed up, leases running to term with no outreach. DealerScope ingests those exports, surfaces the specific records worth a phone call, and generates a call script for each one.
+Revenue intelligence for car dealerships. It reads DMS and CRM exports and points to the records worth a phone call: leads that got one call and then nothing, declined service work nobody followed up on, and leases running to term with no outreach. Each finding comes with a generated call script.
 
-**Stack**
+- **Every dealership exports data differently.** A universal CSV adapter maps Tekion, DealerSocket, CDK and arbitrary headers to one schema, and sends genuinely ambiguous columns to an LLM.
+- **It won't make up a score.** The close-probability model is Naive Bayes trained on the store's own closed-versus-lost leads. With fewer than 20 closed deals, it shows labeled industry priors instead of a per-lead score.
+- **A test enforces honesty.** `test_no_fabricated_data.py` fails the build if an endpoint returns figures that no data supports.
 
-| Layer | Technology |
-|---|---|
-| Backend | Python 3.11, FastAPI, file-based JSON storage, Railway |
-| Frontend | React 19, Vite 8, React Router v7, Vercel |
-| AI | NVIDIA NIM API for call script generation, with deterministic fallbacks when no model is available |
-| Auth | Bearer tokens, bcrypt hashing with transparent legacy rehash |
-| Notifications | Telegram Bot API, SMTP |
+`Python 3.11` `FastAPI` `React 19` `Vite` `NVIDIA NIM` `Railway` `Vercel`. The repo is a public showcase; the production source is private.
 
-Things I had to solve that were harder than they looked:
+### [Momentum strategy walk-forward test](https://github.com/Rudra-C-Patel/trading-bot)
 
-- **Every dealership exports data differently.** Tekion, DealerSocket, CDK and Reynolds all name the same field five different ways. The CSV adapter maps unknown headers to a canonical schema by keyword matching, then falls back to LLM inference for genuinely ambiguous columns.
-- **Small stores have no training data.** The lead close-probability model is Naive Bayes trained on the store's own closed-versus-lost history. Under 20 closed deals it refuses to pretend, returning stated industry priors with an explicit disclaimer instead of a made-up score.
-- **An analytics product that invents numbers is worthless.** The test suite has a dedicated `test_no_fabricated_data.py` that fails the build if an endpoint starts returning figures no data supports.
+An event-driven backtester and walk-forward harness over 5,309 US-listed stocks (4,317 with usable price history), 2020–2024. The result is negative, and the harness is what caught it.
 
-Public showcase repo: **[dealerscope-ai](https://github.com/Rudra-C-Patel/dealerscope-ai)**. Production source is private.
+- An in-sample backtest showed **+10.5% CAGR**. Most of that came from two filter bugs. With the filters fixed, the same backtest earns **−0.7%**.
+- Across 7 folds where the cutoff was picked on past data only, the strategy earned **−3.9% CAGR** out of sample (13 trades).
+- Under the same protocol, all **5** follow-up strategy and instrument tests also failed out of sample. No capital was risked; it is paper trading only.
 
----
+`Python` `pandas` `pytest` (35 unit tests)
 
-## Quantitative Strategy Research Platform
+### [Data pipeline and web-scraping agent](https://github.com/Rudra-C-Patel/internship-automation-agent) (retired)
 
-**[trading-bot](https://github.com/Rudra-C-Patel/trading-bot)**: an event-driven backtester and 7-fold walk-forward validation harness over ~5,300 US stocks. Its main result is a negative one: a 10.5% in-sample CAGR fell to -0.8% out of sample, and 8 strategy configurations were rejected before any capital was deployed. Paper trading only.
+A pipeline that collected listings from 7 job-board sources, normalized them to one schema, ranked them with an LLM, and processed the queue overnight with Playwright, capped at 8 records per night. It ran as systemd services on a self-hosted Ubuntu box until that host was decommissioned in June 2026, and the source code was lost with it. The repo keeps the architecture record and the lesson.
 
----
-
-## Tools I reach for
-
-```
-languages   Python, JavaScript, SQL, C++, Bash
-backend     FastAPI, uvicorn, pandas, pytest
-frontend    React, Vite, Tailwind
-infra       Linux, Railway, Vercel, systemd, Tailscale, GitHub Actions
-ai          NVIDIA NIM, Playwright, scikit-style modeling by hand
-```
+`Python` `Playwright` `NVIDIA NIM` `systemd` `Tailscale`
 
 ---
 
@@ -54,10 +38,12 @@ ai          NVIDIA NIM, Playwright, scikit-style modeling by hand
 
 - UC San Diego, B.S. Cognitive Science (ML & Neural Computation), expected 2028
 - Santiago Canyon College, A.S. Math & Sciences with Honors
-- IT Intern, HSI STEM (Project RAISE), Nov 2025 – Aug 202
+- IT Intern, HSI STEM (Project RAISE), Nov 2025 – Aug 2026
 - Google Cybersecurity and Google Data Analytics certificates
 - English, Gujarati, Hindi, Spanish
 - Permanent Resident, no sponsorship required
+
+**Tools:** Python, JavaScript, SQL, C++, Bash · FastAPI, pandas, pytest · React, Vite, Tailwind · Linux, Railway, Vercel, GitHub Actions
 
 ---
 
